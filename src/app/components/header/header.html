@@ -15,20 +15,27 @@
 
       <!-- باکس جستجو -->
       <div class="hidden lg:flex items-center flex-1 max-w-md mx-8">
-        <div class="relative w-full">
+        <div
+          class="relative w-full flex items-center border border-gray-300 rounded-lg overflow-hidden focus-within:border-blue-500 focus-within:ring-1 focus-within:ring-blue-500">
           <input type="text" placeholder="جستجو در محصولات..."
-            class="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
-          <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24">
+            class="flex-1 px-4 py-2 pr-10 border-none focus:outline-none">
+          <svg class="absolute right-3 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
           </svg>
+          <select class="px-3 py-2 border-r border-gray-300 bg-white focus:outline-none text-gray-700 cursor-pointer">
+            <option value="">همه</option>
+            <option value="">مردانه</option>
+            <option value="">زنانه</option>
+            <option value="">بچگانه</option>
+          </select>
         </div>
       </div>
-
       <!-- منوی اصلی -->
       <nav class="hidden md:flex items-center gap-8">
         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">خانه</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">سبد خرید</a>
         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">محصولات</a>
         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">درباره ما</a>
         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">تماس با ما</a>
@@ -39,12 +46,12 @@
         <a href="#"
           class="hidden sm:inline-block px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition font-medium">
           ورود
+          <fa-icon [icon]="faUser"></fa-icon>
         </a>
         <a href="#"
           class="hidden sm:inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
           عضویت
         </a>
-
         <!-- منوی موبایل -->
         <button class="md:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-lg">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
