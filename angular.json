@@ -22,7 +22,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "https://cdn.fontiran.com/iransans/woff2/IRANSans.woff2.css"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
