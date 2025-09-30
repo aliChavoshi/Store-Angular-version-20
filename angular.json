@@ -23,7 +23,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "https://cdn.fontiran.com/iransans/woff2/IRANSans.woff2.css"
+              "https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
