@@ -1,1 +1,227 @@
-<p>home works!</p>
+<div class="container mx-auto px-4 py-8">
+  <div class="flex flex-col lg:flex-row gap-6">
+
+    <app-side-navigation></app-side-navigation>
+
+    <!-- Main Content - لیست محصولات -->
+    <main class="flex-1">
+      <!-- هدر صفحه محصولات -->
+      <div class="bg-white rounded-lg shadow-md p-4 mb-6">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div>
+            <h1 class="text-2xl font-bold text-gray-800">محصولات</h1>
+            <p class="text-gray-600 text-sm mt-1">120 محصول یافت شد</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-sm text-gray-600">مرتب‌سازی:</span>
+            <select
+              class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-sm">
+              <option>جدیدترین</option>
+              <option>پرفروش‌ترین</option>
+              <option>ارزان‌ترین</option>
+              <option>گران‌ترین</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- گرید محصولات -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- کارت محصول 1 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+          <div class="relative overflow-hidden">
+            <div class="w-full h-64 bg-gray-200 flex items-center justify-center">
+              <svg class="w-24 h-24 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+            <div class="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded text-xs font-bold">
+              20% تخفیف
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition">کفش ورزشی مردانه</h3>
+            <p class="text-sm text-gray-600 mb-3">برند نایک - مدل 2024</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xl font-bold text-blue-600">2,400,000</span>
+                <span class="text-sm text-gray-400 line-through">3,000,000</span>
+                <span class="text-xs text-gray-600">تومان</span>
+              </div>
+            </div>
+            <button
+              class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
+              افزودن به سبد
+            </button>
+          </div>
+        </div>
+
+        <!-- کارت محصول 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+          <div class="relative overflow-hidden">
+            <div class="w-full h-64 bg-gray-200 flex items-center justify-center">
+              <svg class="w-24 h-24 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">
+              جدید
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition">تی‌شرت مردانه</h3>
+            <p class="text-sm text-gray-600 mb-3">برند آدیداس - کلکسیون بهار</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xl font-bold text-blue-600">850,000</span>
+                <span class="text-xs text-gray-600">تومان</span>
+              </div>
+            </div>
+            <button
+              class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
+              افزودن به سبد
+            </button>
+          </div>
+        </div>
+
+        <!-- کارت محصول 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+          <div class="relative overflow-hidden">
+            <div class="w-full h-64 bg-gray-200 flex items-center justify-center">
+              <svg class="w-24 h-24 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition">کیف ورزشی</h3>
+            <p class="text-sm text-gray-600 mb-3">برند پوما - چرم طبیعی</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xl font-bold text-blue-600">1,200,000</span>
+                <span class="text-xs text-gray-600">تومان</span>
+              </div>
+            </div>
+            <button
+              class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
+              افزودن به سبد
+            </button>
+          </div>
+        </div>
+
+        <!-- کارت محصول 4 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+          <div class="relative overflow-hidden">
+            <div class="w-full h-64 bg-gray-200 flex items-center justify-center">
+              <svg class="w-24 h-24 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+            <div class="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded text-xs font-bold">
+              15% تخفیف
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition">شلوار جین مردانه</h3>
+            <p class="text-sm text-gray-600 mb-3">برند لیوایز - رنگ آبی</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xl font-bold text-blue-600">1,700,000</span>
+                <span class="text-sm text-gray-400 line-through">2,000,000</span>
+                <span class="text-xs text-gray-600">تومان</span>
+              </div>
+            </div>
+            <button
+              class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
+              افزودن به سبد
+            </button>
+          </div>
+        </div>
+
+        <!-- کارت محصول 5 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+          <div class="relative overflow-hidden">
+            <div class="w-full h-64 bg-gray-200 flex items-center justify-center">
+              <svg class="w-24 h-24 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition">کلاه ورزشی</h3>
+            <p class="text-sm text-gray-600 mb-3">برند نایک - مدل کلاسیک</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xl font-bold text-blue-600">350,000</span>
+                <span class="text-xs text-gray-600">تومان</span>
+              </div>
+            </div>
+            <button
+              class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
+              افزودن به سبد
+            </button>
+          </div>
+        </div>
+
+        <!-- کارت محصول 6 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+          <div class="relative overflow-hidden">
+            <div class="w-full h-64 bg-gray-200 flex items-center justify-center">
+              <svg class="w-24 h-24 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+            <div class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">
+              جدید
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition">ساعت هوشمند</h3>
+            <p class="text-sm text-gray-600 mb-3">برند سامسونگ - مدل Galaxy Watch</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-baseline gap-2">
+                <span class="text-xl font-bold text-blue-600">5,500,000</span>
+                <span class="text-xs text-gray-600">تومان</span>
+              </div>
+            </div>
+            <button
+              class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
+              افزودن به سبد
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- صفحه‌بندی -->
+      <div class="mt-8 flex justify-center">
+        <div class="flex items-center gap-2">
+          <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+            قبلی
+          </button>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-lg">1</button>
+          <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">2</button>
+          <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">3</button>
+          <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">4</button>
+          <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+            بعدی
+          </button>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
