@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Product } from '../../../models/product';
+import { Product } from '../../../../models/product';
 import { DecimalPipe } from '@angular/common';
 
 @Component({
