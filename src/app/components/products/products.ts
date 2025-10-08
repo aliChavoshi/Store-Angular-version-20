@@ -1,21 +1,16 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ProductItem } from "./product-item/product-item";
-import { ProductService } from './product.service';
-import { ProductsListResponse } from '../../models/product';
+import { RouterOutlet } from '@angular/router';
+import { SideNavigation } from "../home/side-navigation/side-navigation";
+import { Sorting } from "../home/sorting/sorting";
+import { Pagination } from "../home/pagination/pagination";
+
 
 @Component({
   selector: 'app-products',
-  imports: [ProductItem],
+  imports: [RouterOutlet, SideNavigation, Sorting, Pagination],
   templateUrl: './products.html',
   styleUrl: './products.css'
 })
-export class Products implements OnInit {
-  productList! : ProductsListResponse;
-  private productService = inject(ProductService);
-  ngOnInit(): void {
-    this.productService.getProductList().subscribe(res => {
-      this.productList = res;
-    });
-  }
+export class Products {
 
 }

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { SideNavigation } from "./side-navigation/side-navigation";
 import { Products } from "../products/products";
-import { Pagination } from "./pagination/pagination";
+import { ProductListComponent } from "../products/product-list/product-list.component";
+import { SideNavigation } from "./side-navigation/side-navigation";
 import { Sorting } from "./sorting/sorting";
+import { Pagination } from "./pagination/pagination";
 
 @Component({
   selector: 'app-home',
-  imports: [SideNavigation, Products, Pagination, Sorting],
+  imports: [ProductListComponent, SideNavigation, Sorting, Pagination],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })

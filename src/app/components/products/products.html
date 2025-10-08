@@ -1,8 +1,10 @@
-<!-- گرید محصولات -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-  @if(productList){
-  @for (item of productList.products; track $index) {
-  <app-product-item [product]="item"></app-product-item>
-  }
-  }
+<div class="container mx-auto px-4 py-8">
+  <div class="flex flex-col lg:flex-row gap-6">
+    <app-side-navigation></app-side-navigation>
+    <main class="flex-1">
+      <app-sorting></app-sorting>
+      <router-outlet></router-outlet>
+      <app-pagination></app-pagination>
+    </main>
+  </div>
 </div>
