@@ -1,11 +1,8 @@
 <!-- گرید محصولات -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-
+  @if(productList){
+  @for (item of productList.products; track $index) {
+  <app-product-item [product]="item"></app-product-item>
+  }
+  }
 </div>
